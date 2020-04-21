@@ -4,5 +4,5 @@ how include it in your progam
 1)copy this takeCommand() function in your code and then call it anywhere you want to take user input.
 e.g
 a=input()        #as we do for text input
-a=takeCommand()  # it will take user input by voice But its not builtin function like input().so, you need to declare this function in by your own the code for this function is given in 
+a=takeCommand()  # it will take user input by voice But its not builtin function like input().so, you need to declare this function in by                   your own the CODE FOR THIS FUNCTION IS GIVEN (takeCommand()) file.
 
