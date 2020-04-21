@@ -1,0 +1,22 @@
+import speech_recognition as sr
+def takeCommand():
+   r = sr.Recognizer()
+   #use the microphone for voice input source
+   with sr.Microphone() as source:
+     print("listing")
+     r.pause_threshold = 1
+     audio = r.listen(source)
+   try:
+   # to recognise the voice input and to conver it into the txt
+      print("recognising")
+      query =r.recognize_google(audio, language='en-in')
+      print(f"user said {query}")
+
+   except Exception as e:
+    # if some exception occurred
+      print("say that again please")
+      return None
+   return query
+   #now use print() to print voice command as follows
+
+print(takeCommand())
